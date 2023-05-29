@@ -1,0 +1,224 @@
+.showCase{
+	padding-top: 120px;
+	padding-bottom: 120px;
+	margin-top: 220px;
+}
+
+.product{
+	height: 185px;
+	width: auto;
+}
+
+
+
+body{
+	padding: 0;
+	margin: 0;
+}
+
+
+
+
+
+
+
+
+.description{
+	display: flex;
+	justify-content: center;
+}
+
+.main_show{
+	display: flex;
+	justify-content: center;
+    padding-top: 105px;
+	padding-bottom: 105px;
+    flex-wrap: wrap;
+	
+}
+
+.buy_case{
+	margin-top: 20px;
+	text-decoration: none;
+	padding: 8px 32px;
+	border-radius: 15px;
+	border: solid 1px white;
+	background-color: #d9b78a;
+	cursor: pointer;
+	font-size: 15px;
+}
+
+.buy_case:hover{
+	background-color: white;
+	border: solid 1px #d9b78a;
+	transition: 1s;
+}
+
+
+
+
+
+
+
+
+
+.card_product2{
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+
+
+
+.Showmenu{
+	display: flex;
+	margin-left: 100px;
+
+}
+
+.card_product{
+	display: flex;
+	justify-content: center;
+}
+
+.card{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.product_img{
+	height: 185px;
+	width: auto;
+}
+
+
+/*счетчик*/
+
+.counter{
+	display: flex;
+	align-items: center;
+	font-size: 15px;
+	margin-top: 10px;
+}
+
+.item_control{
+	cursor: pointer;
+	border: none;
+	font-size: 15px;
+	padding: 10px 20px;
+}
+
+.item_control:hover{
+	background: white;
+	transition: 1s;
+}
+
+.item_current{
+	padding: 10px;
+	background: #F0F0F0;
+}
+
+
+/*КОРЗИНА*/
+
+
+
+
+.bag_btn{
+	border: none;
+}
+
+
+.bag_btn img{
+	height: 100px;
+}
+
+
+
+.basket img{
+	height: 200px;
+	margin-right: 300px;
+}
+
+.cardProductBasket{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 20px;
+}
+
+.cardProductBasket p{
+	padding-right: 200px;
+	font-size: 30px;
+}
+
+.counterBasket{
+	display: flex;
+	align-items: center;
+	font-size: 15px;
+	margin-top: 10px;
+	padding-right: 160px;
+}
+
+
+
+
+
+/*модальное окно*/
+
+
+.modal{
+	display: none;
+	position: fixed;
+	z-index: 1000;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgb(255, 255, 255, 0.3);
+	overflow: auto;
+}
+
+.modal_content{
+	margin: 200px auto;
+	background: #e7cca8;
+	padding: 20px;
+	height: 90%;
+	width: 90%;
+	z-index: 99999;
+	border-radius: 15px;
+}
+
+.close_modal{
+	color: black;
+	float: right;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+
+
+
+
+/*цена и название*/
+
+.productNP{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.nameProduct{
+	margin-bottom: 10px;
+}
+
+.priceP{
+	margin: 0;
+}
+
+.product_price{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
