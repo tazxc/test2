@@ -65,17 +65,17 @@ body{
 .card_product2{
 	display: flex;
 	justify-content: center;
-	margin-top: 10px;
+	margin-top: 50px;
 }
 
 
 
-
+/* 
 .Showmenu{
 	display: flex;
 	margin-left: 100px;
 
-}
+} */
 
 .card_product{
 	display: flex;
