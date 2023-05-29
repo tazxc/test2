@@ -88,31 +88,49 @@ window.addEventListener('click', function(event) {
 			price: card.querySelector('.priceP').innerText,
 			counter: card.querySelector('[data-counter]').innerText,
 		}
-		console.log(productInfo)
+		
+		const itemInCart = basket.querySelector(`[data-id="${productInfo.id}"]`)
+
+		if(itemInCart){
+			const counterel = itemInCart.querySelector('[data-counter]')
+			counterel.innerText = parseInt(counterel.innerText) + parseInt(productInfo.counter)
+		}else{
+
+			const cartItemHTML = `<div>
+									<div class="cardProductBasket" data-id="${productInfo.id}">
+ 										<img src="${productInfo.imgSrc}" alt="">
+
+ 										<p>${productInfo.title}</p>
+ 									
+
+ 										<div class="counterBasket">
+											<button class="item_control" data-action="minus">-</button>
+											<div class="item_current" data-counter>${productInfo.counter}</div>
+											<button class="item_control" data-action="plus">+</button>
+										</div>
+
+ 										<p>${productInfo.price}</p>
+
+ 									</div>
+								</div>`
+
+
+
+			basket.insertAdjacentHTML('beforeend', cartItemHTML)
+			
+
+			card.querySelector('[data-counter]').innerText = '1'
+
+		}
+
+
+
 
 		// window.addEventListener('scroll', function() {
 		// 	document.getElementById('showScroll').innerHTML = pageYOffset + 'px';
 		// })
 
-		const cartItemHTML = `<div class="cardProductBasket">
- 									<img src="${productInfo.imgSrc}" alt="">
-
- 									<p>${productInfo.title}</p>
- 									
-
- 									<div class="counterBasket">
-										<button class="item_control" data-action="minus">-</button>
-										<div class="item_current" data-counter>${productInfo.counter}</div>
-										<button class="item_control" data-action="plus">+</button>
-									</div>
-
- 									<p>${productInfo.price}</p>
-
- 								</div>`
-
-
-
-	basket.insertAdjacentHTML('beforeend', cartItemHTML)
+		
 	}
 })
 
